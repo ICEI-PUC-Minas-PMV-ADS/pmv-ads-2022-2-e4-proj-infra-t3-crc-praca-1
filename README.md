@@ -1,16 +1,16 @@
-# TÍTULO DO PROJETO
+# CRC-Praça
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Eixo 4 - Projeto: Desenvolvimento de uma Aplicação Distribuída`
 
-`SEMESTRE`
+`4º Semestre`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Matheus Lavisio da Cruz Marques
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
