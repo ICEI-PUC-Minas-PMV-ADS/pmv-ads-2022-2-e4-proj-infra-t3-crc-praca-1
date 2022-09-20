@@ -11,7 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Matheus Lavisio da Cruz Marques
-* Nome completo do aluno 2
+* Ryan Souza Camargos de Oliveira
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 
