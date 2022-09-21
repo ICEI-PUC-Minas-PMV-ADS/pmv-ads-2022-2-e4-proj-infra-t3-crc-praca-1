@@ -12,7 +12,8 @@ Através do HUB, é possível, por exemplo:
   - criar tarefas visíveis a todos os usuários;
   - cadastrar contatos;
   - construir e acessar planilhas com listas de IP's;
-  - registrar assets (ativos) da universidade;
+  - registrar e monitorar assets (ativos) da universidade;
+  - listar links importantes; 
   - e outras funções e informações relevantes para os profissionais que usarão o HUB em seus trabalhos.
 
 ## Integrantes
