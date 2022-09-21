@@ -1,31 +1,11 @@
 # Introdução
 
-Atualmente, os técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, enfrentam alguns obstáculos para a realização de suas atividades, tais como: informações importantes dipersas, dificuldade na comunicação entre os membros da equipe, entre outros. Por causa disso, 
-
-O projeto consiste num HUB, que abrange todas as informações relacionadas ao dia a dia dos técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, e os ajuda a organizar suas tarefas e a centralizar informações pertinentes a suas atividades. Este HUB conta com versões mobile e web, além de uma arquitetura distribuída, para que possa ser acessado por meio de diversos tipos de dispositivos de forma simultânea.
-
-
-
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Atualmente, os técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, enfrentam alguns obstáculos para a realização de suas atividades, tais como: informações importantes dipersas, dificuldade na comunicação entre os membros da equipe, entre outros. Por causa disso, informações que deveriam ser de fácil acesso a todos, como as relações dos IPs, mapeamento de impressoras e registros de usuários, são difíceis de ser obtidas. Mais: alguns equipamentos utilizados durante as atividades às vezes são esquecidos ou perdidos devido à falta de um controle simples e prático para rastreá-los.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Para sanar essas dificuldades, este projeto surgiu. Ele consiste num HUB, que abrange todas as informações relacionadas ao dia a dia dos técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, e os ajuda a organizar suas tarefas e a centralizar informações pertinentes a suas atividades. Este HUB conta com versões mobile e web, além de uma arquitetura distribuída, para que possa ser acessado por meio de diversos tipos de dispositivos de forma simultânea.
 
 ## Justificativa
 
