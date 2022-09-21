@@ -6,7 +6,7 @@
 
 `4º Semestre`
 
-O projeto consiste num HUB, que abrange todas as informações relacionadas ao dia a dia dos técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, e os ajuda organizando suas tarefas e centralizando informações pertinentes a suas atividades. Este HUB conta com versões mobile e web, além de uma arquitetura distribuída, para que possa ser acessado por meio de diversos tipos de dispositivos de forma simultânea.
+O projeto consiste num HUB, que abrange todas as informações relacionadas ao dia a dia dos técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, e os ajuda a organizar suas tarefas e a centralizar informações pertinentes a suas atividades. Este HUB conta com versões mobile e web, além de uma arquitetura distribuída, para que possa ser acessado por meio de diversos tipos de dispositivos de forma simultânea.
 
 Através do HUB, é possível, por exemplo:
   - criar tarefas visíveis a todos os usuários;
