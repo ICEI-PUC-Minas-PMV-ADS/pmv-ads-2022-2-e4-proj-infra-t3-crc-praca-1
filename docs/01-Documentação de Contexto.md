@@ -9,7 +9,7 @@ Para sanar essas dificuldades, este projeto surgiu. Ele consiste num HUB, que ab
 
 ## Justificativa
 
-Em posse do HUB, aumenta-se a eficiência e a produtividade dos técnicos de informática, diminui-se o tempo de resposta aos chamados e evita-se perda de ativos da universidade. A equipe de informática da PUC-Minas, Unidade Praça da Liberdade, poderá prestar um serviços de maior qualidade a seus clientes internos, além de propiciar à gestão da equipe uma ferramenta por meio da qual se possa aferir o trabalho sendo realizado e, consequentemente, melhorar a tomada de decisão.
+Em posse do HUB, aumenta-se a eficiência e a produtividade dos técnicos de informática, diminui-se o tempo de resposta aos chamados e evita-se perda de ativos da universidade. A equipe de informática da PUC-Minas, Unidade Praça da Liberdade, poderá prestar um serviço de maior qualidade a seus clientes internos, além de propiciar à gestão da equipe uma ferramenta por meio da qual se possa aferir o trabalho sendo realizado e, consequentemente, melhorar a tomada de decisão.
 
 ## Público-Alvo
 
