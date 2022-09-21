@@ -1,6 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Atualmente, os técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, enfrentam alguns obstáculos para a realização de suas atividades, tais como: informações importantes dipersas, dificuldade na comunicação entre os membros da equipe, entre outros. Por causa disso, 
+
+O projeto consiste num HUB, que abrange todas as informações relacionadas ao dia a dia dos técnicos de informática da PUC-Minas, Unidade Praça da Liberdade, e os ajuda a organizar suas tarefas e a centralizar informações pertinentes a suas atividades. Este HUB conta com versões mobile e web, além de uma arquitetura distribuída, para que possa ser acessado por meio de diversos tipos de dispositivos de forma simultânea.
+
+
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
