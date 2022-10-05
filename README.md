@@ -20,8 +20,8 @@ Através do HUB, é possível, por exemplo:
 
 * Matheus Lavisio da Cruz Marques
 * Ryan Souza Camargos de Oliveira
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Rafael Xavier Rezende 
+* Pablo Henrique Xavier Borges
 
 ## Orientador
 
