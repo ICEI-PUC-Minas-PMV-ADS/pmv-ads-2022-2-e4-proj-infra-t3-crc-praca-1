@@ -97,3 +97,5 @@ As ferramentas utilizadas no desenvolvimento do projeto foram as seguintes:
 
 •	Lucidchart: para criação dos diagramas.
 
+•	Lucidchart: para criação da aplicação.
+
