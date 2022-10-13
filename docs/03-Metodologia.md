@@ -42,6 +42,13 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 > - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 
 ## Gerenciamento de Projeto
+Os artefatos do projeto estao sendo desenvolvidos a partir de 2 plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue:
+AMBIENTE	PLATAFORMA	LINK DE ACESSO
+Repositório de código fonte	GitHub	https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e4-proj-infra-t3-crc-praca-1
+Documentos do Projeto	GitHub	https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e4-proj-infra-t3-crc-praca-1
+Projeto de Interface e Wireframes	Figma	https://www.figma.com/
+Gerenciamento do Projeto	GitHub	https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e4-proj-infra-t3-crc-praca-1
+![image](https://user-images.githubusercontent.com/81633095/195621366-3cf45dbc-1a99-4209-9fb4-f8defead162a.png)
 
 
 ### Divisão de Papéis
