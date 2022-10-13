@@ -23,6 +23,7 @@ Através do HUB, é possível, por exemplo:
 * Rafael Xavier Rezende 
 * Pablo Henrique Xavier Borges
 * Leonardo Barbosa Ferreira
+* Emerson Alves dos Santos
 
 ## Orientador
 
