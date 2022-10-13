@@ -44,7 +44,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 ## Gerenciamento de Projeto
 Os artefatos do projeto estao sendo desenvolvidos a partir de 2 plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue:
 
-![image](https://user-images.githubusercontent.com/81633095/195621366-3cf45dbc-1a99-4209-9fb4-f8defead162a.png)
+![image](https://user-images.githubusercontent.com/81633095/195621794-982ca779-d7a6-4892-b250-3bd182f33d65.png)
+
 
 
 ### Divisão de Papéis
