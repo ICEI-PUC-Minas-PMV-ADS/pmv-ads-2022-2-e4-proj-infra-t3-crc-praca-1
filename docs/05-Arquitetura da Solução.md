@@ -24,12 +24,11 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
 ## Esquema Relacional
+[Esquema Relacional 1](https://ibb.co/wcH8jTK)
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
+[Esquema Relacional 2 ](https://ibb.co/KWQSpjx)
+
  
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
 ## Modelo Físico
 
@@ -37,9 +36,18 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+JAVA
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Framework spring boot 
+
+LIBS
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import javax.persistence.Entity;
+org.apache.maven.plugins
+
+Schema banco de dados JPA 
+
 
 ## Hospedagem
 
