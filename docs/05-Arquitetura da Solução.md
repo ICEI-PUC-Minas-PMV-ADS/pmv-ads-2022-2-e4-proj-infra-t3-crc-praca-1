@@ -39,17 +39,8 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-JAVA
+ ** Java, Spring Boot e Spring Security, Auth0 e JPA,Swagger Doc **
 
-Framework spring boot 
-
-LIBS
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import javax.persistence.Entity;
-org.apache.maven.plugins
-
-Schema banco de dados JPA 
 
 
 ## Hospedagem
