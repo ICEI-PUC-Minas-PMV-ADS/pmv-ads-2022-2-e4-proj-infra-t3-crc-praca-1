@@ -24,9 +24,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
 ## Esquema Relacional
-[Esquema Relacional 1](https://ibb.co/wcH8jTK)
+[Esquema Relacional 1](https://i.ibb.co/3RXVQw0/objetos.png)
 
-[Esquema Relacional 2 ](https://ibb.co/KWQSpjx)
+[Esquema Relacional 2 ](https://i.ibb.co/SB1G4Xw/dominio.png)
 
  
 
