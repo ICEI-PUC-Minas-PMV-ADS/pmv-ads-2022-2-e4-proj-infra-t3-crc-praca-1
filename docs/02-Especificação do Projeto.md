@@ -158,7 +158,7 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
- <iframe src="https://docs.google.com/document/d/12MxYMqI6OZYBhixuQ0b6V4EUhpRNBqpE8KIkBqdFlDY/edit?usp=sharing" title="Gerenciamento de Equipe"></iframe> 
+<iframe height="500" width="500" src="https://docs.google.com/document/d/12MxYMqI6OZYBhixuQ0b6V4EUhpRNBqpE8KIkBqdFlDY/edit?usp=sharing"></iframe>
 
 ## Gestão de Orçamento
 
