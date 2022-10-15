@@ -26,7 +26,10 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 ## Esquema Relacional
 [Esquema Relacional 1](https://i.ibb.co/3RXVQw0/objetos.png)
 
+ <img src="https://i.ibb.co/3RXVQw0/objetos.png" alt="Esquema Relacional 1" width="500" height="600">
+ 
 [Esquema Relacional 2 ](https://i.ibb.co/SB1G4Xw/dominio.png)
+ <img src="https://i.ibb.co/SB1G4Xw/dominio.png" alt="Esquema Relacional 1" width="500" height="600"> 
 
  
 
