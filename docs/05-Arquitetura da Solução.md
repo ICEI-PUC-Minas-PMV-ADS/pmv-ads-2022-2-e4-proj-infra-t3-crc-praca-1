@@ -39,7 +39,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
- ** Java, Spring Boot e Spring Security, Auth0 e JPA,Swagger Doc **
+> ** Java, Spring Boot e Spring Security, Auth0 e JPA,Swagger Doc **
 
 
 
