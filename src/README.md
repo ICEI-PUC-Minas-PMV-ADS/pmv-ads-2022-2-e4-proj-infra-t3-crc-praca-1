@@ -9,6 +9,11 @@
 https://www.youtube.com/watch?v=bT1XNzgmqG4
 
 
+# VIDEO DE SWAGGER  DOC API DO PROJETO  ->
+
+https://www.youtube.com/watch?v=NbFun4ia4nA
+
+
 
 ## Histórico de versões
 
