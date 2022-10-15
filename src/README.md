@@ -1,11 +1,19 @@
 # Instruções de utilização
+# IDE -> STS spring tool suite 
+# 1) instalar as dependencias
+# 2) iniciar o servidor 
+## Utilizar a api juntamente com o banco externo
 
-## Instalação do Site
+# VIDEO DE UTILIZACAO DO PROJETO ->
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+https://www.youtube.com/watch?v=bT1XNzgmqG4
+
+
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
+### [0.1.0] - 14/10/2022
 #### Adicionado
-- Adicionado ...
+Projeto em java/Spring boot 
+Banco de dados  JPA 
+API/ controller /Spring boot
