@@ -31,7 +31,7 @@ Apresente aqui uma descrição da sua proposta abordando seus limites e suas lig
 
 ### Processo 1 – NOME DO PROCESSO
 
-![NOME DO PROCESSO(https://i.ibb.co/99Xhgyv/fluxograma.jpg)
+![NOME DO PROCESSO](https://i.ibb.co/99Xhgyv/fluxograma.jpg)
 
 ## Indicadores de Desempenho
 
