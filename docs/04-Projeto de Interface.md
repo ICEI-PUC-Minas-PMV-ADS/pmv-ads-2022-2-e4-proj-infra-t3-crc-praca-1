@@ -27,7 +27,7 @@ Tela de Login
 ![Tela de Login](https://user-images.githubusercontent.com/83379675/198364261-182e281f-3fa5-405a-985c-18f122dba838.png)
 
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Prototipo de Interface para a tela de login, pedindo ID e Senha e um esqueci a senha, para caso seja preciso recupera-la.
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
