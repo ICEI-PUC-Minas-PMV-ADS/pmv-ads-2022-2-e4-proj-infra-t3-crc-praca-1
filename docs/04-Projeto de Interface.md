@@ -22,12 +22,20 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-Tela de Login
+## Tela de Login
 
 ![Tela de Login](https://user-images.githubusercontent.com/83379675/198364261-182e281f-3fa5-405a-985c-18f122dba838.png)
 
 
 Prototipo de Interface para a tela de login, pedindo ID e Senha e um esqueci a senha, para caso seja preciso recupera-la.
+
+
+## Tela Inicial
+
+![Tela Inicial](https://user-images.githubusercontent.com/83379675/198705050-11b62180-74ad-458f-a182-425fda3138f7.png)
+
+A Tela Inicial tem como objetivo, reunir as informações indispensaveis do dia, de forma que a primeira coisa que iriamos fazer é oque esta descrito nela. tambem sera implementado, uma lista de tarefas pessoais.
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
