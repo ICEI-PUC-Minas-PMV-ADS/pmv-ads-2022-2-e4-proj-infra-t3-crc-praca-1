@@ -36,6 +36,13 @@ Prototipo de Interface para a tela de login, pedindo ID e Senha e um esqueci a s
 
 A Tela Inicial tem como objetivo, reunir as informações indispensaveis do dia, de forma que a primeira coisa que iriamos fazer é oque esta descrito nela. tambem sera implementado, uma lista de tarefas pessoais.
 
+
+## Tarefas do CRC
+
+![Tarefas da CRC](https://user-images.githubusercontent.com/83379675/198893608-c2120df6-7c3c-4cd7-85ce-f5eff98c275a.png)
+
+a Tela Tarefas do CRC, representa tarefas dadas pelos superiores que foram passadas a eles sem um protocolo, e que ele necessita que alguem as pegue, as tarefas são separadas por cores para maior prioridade a menor, com um sistema de arrastar e soltar para que um usuario assuma a tarefa ficando como responsavel.
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
