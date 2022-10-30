@@ -105,7 +105,7 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
-![Exemplo de matriz de Rastreabilidade](https://i.ibb.co/MkxbPCx/diagrama.jpg)
+![Exemplo de matriz de diagrama de casos de uso]( https://i.ibb.co/MkxbPCx/diagrama.jpg )
 
 # Matriz de Rastreabilidade
 
