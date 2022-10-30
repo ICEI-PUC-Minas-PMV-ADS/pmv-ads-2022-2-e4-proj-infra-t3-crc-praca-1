@@ -50,15 +50,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
+|RF-001| Permitir que o usuário cadastre tarefas | ALTA |
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-003| Permitir que o usuário edite tarefas | MÉDIA | 
+|RF-004| Permitir que o usuário conclua tarefas | ALTA | 
+|RF-005| Permitir que o admin cadastre tarefas | ALTA | 
+|RF-006| Permitir que o admin edite tarefas | ALTA | 
+|RF-007| Permitir que o admin conclua tarefas | ALTA | 
+|RF-008| Permitir que o admin cadastre permissoes | ALTA | 
+|RF-009| Permitir que o usuário edite permissoes | ALTA | 
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 20s |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
