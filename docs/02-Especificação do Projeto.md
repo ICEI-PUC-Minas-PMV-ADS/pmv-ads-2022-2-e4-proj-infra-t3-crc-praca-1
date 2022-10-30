@@ -59,6 +59,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| Permitir que o admin conclua tarefas | ALTA | 
 |RF-008| Permitir que o admin cadastre permissoes | ALTA | 
 |RF-009| Permitir que o usuário edite permissoes | ALTA | 
+|RF-009| Permitir que o usuário exporte  tabelas | ALTA | 
 
 
 ### Requisitos não Funcionais
