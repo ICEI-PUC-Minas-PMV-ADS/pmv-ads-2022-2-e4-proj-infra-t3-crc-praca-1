@@ -43,6 +43,12 @@ A Tela Inicial tem como objetivo, reunir as informações indispensaveis do dia,
 
 a Tela Tarefas do CRC, representa tarefas dadas pelos superiores que foram passadas a eles sem um protocolo, e que ele necessita que alguem as pegue, as tarefas são separadas por cores para maior prioridade a menor, com um sistema de arrastar e soltar para que um usuario assuma a tarefa ficando como responsavel.
 
+## Ativos Puc
+
+![Ativos Puc Certo](https://user-images.githubusercontent.com/83379675/199020482-4d424daf-c3a6-4403-abb5-d56c4eb6f35b.png)
+
+A Tela de Ativos Puc, me da a possibilidade de ver todos os atios que eu tenho regitrados dentro da Universidade, me dando opção de adicionalos, saber o local e qual a sua situação
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
