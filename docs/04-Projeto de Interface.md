@@ -49,6 +49,13 @@ a Tela Tarefas do CRC, representa tarefas dadas pelos superiores que foram passa
 
 A Tela de Ativos Puc, me da a possibilidade de ver todos os atios que eu tenho regitrados dentro da Universidade, me dando opção de adicionalos, saber o local e qual a sua situação
 
+## Planilhas 
+
+![Planilhas](https://user-images.githubusercontent.com/83379675/199020928-c5a95873-7e23-4be5-8b25-c61ea4cc5276.png)
+
+
+a Tela de Planihas me da a posibilidade de ver planilhas de controles podendo alteralas, adicionar ou removelas, possuindo tambem uma opção de busca.
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
