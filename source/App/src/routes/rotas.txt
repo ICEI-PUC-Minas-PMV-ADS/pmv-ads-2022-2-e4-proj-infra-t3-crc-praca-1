@@ -1,0 +1,1 @@
+Essa serao as rotas validadas pelo front end a qual o usuario tera acesso

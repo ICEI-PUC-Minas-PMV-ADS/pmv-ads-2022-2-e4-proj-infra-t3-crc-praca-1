@@ -1,0 +1,3 @@
+Essa pasta vai vir os arquivos onde esta as classes dos arquivos 
+onde se configura essas questoes
+sao componentes que ficam por todo App e nao somente uma pagina com acesso.
