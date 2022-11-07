@@ -39,6 +39,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
+<<<<<<< HEAD
 
 Java, Spring Boot e Spring Security, Auth0 e JPA,Swagger Doc
 
@@ -49,6 +50,10 @@ import javax.persistence.Entity;
 org.apache.maven.plugins
 
 Schema banco de dados JPA 
+=======
+> ** Java, Spring Boot e Spring Security, Auth0 e JPA,Swagger Doc **
+
+>>>>>>> origin/main
 
 
 ## Hospedagem
