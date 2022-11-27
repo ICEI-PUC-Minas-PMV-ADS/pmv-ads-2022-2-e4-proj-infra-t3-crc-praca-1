@@ -24,19 +24,26 @@ import { Provider } from 'react-redux';
 // Que passa para todo app que os componentes possuem rota
 // mas na verdade ele mostra que todo app tem um state global para 
 // ser usado e mudado
-import Store from './store';
+import { PersistGate } from 'redux-persist/integration/react';
+// envolver com esse persist gate ele recebe o persistor a const la no index de modules
 
+import Store, { persistor } from './store';
+// importei o persistor para informar no app que eu quero salvar a aplicacao do persistor
+// 
 export default function App() {
   return (
     <div className="App">
       {/* passando o state incial para todo app */}
+      {/* espera obter os dados para depois renderizar */}
       <Provider store={Store}>
-        <BrowserRouter history={history}>
-          <Header />
-          <Rota />
-          <GlobalStyles />
-          <ToastContainer autoClose={3000} className={"toast-container"} />
-        </BrowserRouter>
+        <PersistGate persistor={persistor}>
+          <BrowserRouter history={history}>
+            <Header />
+            <Rota />
+            <GlobalStyles />
+            <ToastContainer autoClose={3000} className={"toast-container"} />
+          </BrowserRouter>
+        </PersistGate>
       </Provider>
     </div>
   );

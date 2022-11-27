@@ -1,14 +1,13 @@
 import { call, put, all, takeLatest } from 'redux-saga/effects';
 import * as actions from '../examples/actions';
 import * as types from '../examples/types';
-const requisicao = () => {
-
+import { toast } from 'react-toastify';
+const requisicao = () =>
     new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve();
-        }, 1000);
+            reject();
+        }, 2000);
     });
-}
 // la no login a gente disparou a request 
 // takeLatest pega so o ultimo clique 
 // all permite colocar varias acoes
@@ -21,16 +20,18 @@ function* exampleRequest() {
         yield call(requisicao);
         // disparar uma action para 
         yield put(actions.clicaBotaoSuccess());
+        // assim que for pego a acao dessa action
 
     } catch {
+        toast.error("Error na promise");
         yield put(actions.clicaBotaoFailure());
     }
 
 }
 // exportando o redux-saga que vai escutar a request de 
 // todas o ultimo clique faz isso
-export default all([takeLatest(
-    takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)
-)]);
+// exportei para utilizar
+
+export default all([takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)]);
 
 

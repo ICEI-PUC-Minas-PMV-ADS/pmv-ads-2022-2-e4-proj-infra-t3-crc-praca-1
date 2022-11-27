@@ -3,6 +3,7 @@
 import axios from 'axios';
 // criando uma config do axios onde se trata o baseURL
 // Axios
+
 export default axios.create({
     baseURL: "http://localhost:8080"
 }); 

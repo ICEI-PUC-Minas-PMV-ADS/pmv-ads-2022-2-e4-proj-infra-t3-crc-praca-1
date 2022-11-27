@@ -3,6 +3,7 @@ import { Container } from "../../styles/GlobalStyles";
 // importei o services de history para controlar a navegacao no front-end
 // logo apos isso fica disponivel para ser utilizado 
 import { useNavigate } from "react-router-dom";
+import { FaBomb } from 'react-icons/fa';
 
 export default function Page404() {
     // esses contextos sao utilizando 
@@ -35,9 +36,8 @@ export default function Page404() {
 
     return (
         <Container>
-            <h1>
-                {time}
-            </h1>
+            <p>Pagina não encontrada.</p>
+            <p> Redirecionamento <FaBomb color="red" size={24} />  {time}</p>
         </Container>
     );
 }

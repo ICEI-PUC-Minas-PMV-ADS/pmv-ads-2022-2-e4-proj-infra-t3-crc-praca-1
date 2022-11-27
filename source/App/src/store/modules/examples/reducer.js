@@ -28,7 +28,6 @@ export default function (state = initialState, action) {
             console.log('Estou fazendo a requisicao');
             return state;
 
-
         case types.BOTAO_CLICADO_SUCCESS:
             // agora e necessario criar um novo state e retornalo pq nao se pode alterar
             // O PROPIO DA APLICACAO

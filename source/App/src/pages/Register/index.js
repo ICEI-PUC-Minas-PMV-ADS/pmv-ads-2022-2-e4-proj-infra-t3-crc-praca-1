@@ -13,7 +13,7 @@ import { useDispatch } from 'react-redux';
 // importando a funcao do exemples/actions.js 
 // que retonar um objeto que tem o type  a qual a funcao dispatch
 // vai usar
-export default function Login() {
+export default function Register() {
     // Montado (ative essas funcoes)
     // utilizando a messagem do toastify
     // utilizando o useEffect para quando o componente ser montado
@@ -39,7 +39,7 @@ export default function Login() {
     return (
         <Container>
             {/* // posso passar parametros que sao checados no componente */}
-            <h1>Login</h1>
+            <h1>Register</h1>
 
         </Container>
 

@@ -14,8 +14,6 @@ export default function Header() {
     //pegando os valores setados no redux para utilizar e mostrar
     // na tela como preferencialmente depois de atualizar 
     // o estado do componente
-    const botaoClicado = useSelector(state => state.exampleReducers.botaoClicado);
-
     // estou jogando para essa variavel quando o botao for clicado
     // o estado dela alterado
     return (
@@ -28,17 +26,16 @@ export default function Header() {
                     <Link to="/">
                         <FaHome size={24} />
                     </Link>
-                    <Link to="/page404" >
+                    <Link to="/register" >
                         <FaUserAlt size={24} />
                     </Link>
-                    <Link to="/logout">
+                    <Link to="/login">
                         <FaSignInAlt size={24} />
                     </Link>
                 </aside>
 
                 {/* A gente vai usar o link do react router dom */}
             </Nav>
-            {botaoClicado ? 'Clicado' : 'Nao Clicado'}
         </MenuHeader>
     );
 }
