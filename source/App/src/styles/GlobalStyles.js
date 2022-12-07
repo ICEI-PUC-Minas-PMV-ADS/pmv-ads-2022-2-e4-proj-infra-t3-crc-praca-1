@@ -35,7 +35,11 @@ export default createGlobalStyle`
 
     button, a, ul {
         cursor: pointer;
+
     }
+
+
+    
     a{
         text-decoration:none;
         color: ${colors.primaryColor};
@@ -50,6 +54,11 @@ export default createGlobalStyle`
         padding:10px 20px;
         border-radius:4px;
         font-weight:bold;
+        transition: all 300ms;
+    }
+    
+    button:hover{
+        filter: brightness(1.1);
     }
     body .Toastify .Toastify__toast-container .Toastify__toast--success{
         background:${colors.successColor}

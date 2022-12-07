@@ -69,7 +69,7 @@ export default function Rotas() {
                     </MyRoute>
                 }
             />
-            <Route exact path="/register/"
+            <Route exact path="/register"
                 element={
                     <MyRoute isClosed={false}>
                         <Register />

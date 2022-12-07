@@ -4,6 +4,8 @@ import { persistReducer } from 'redux-persist';
 // os states ele decide aonde ele quer salvar.
 
 // passando o parametro como segundo argumento para funcao
+// salvando na verdade o reducer que e um estado global do app
+// que vai ser o auth la em rootReducers
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default reducers => {
@@ -12,9 +14,9 @@ export default reducers => {
     // 
     const persistedReducers = persistReducer(
         {
-            key: 'NOME-DA-APLICACAO',
+            key: 'praca-crc',
             storage,
-            whitelist: ['exampleReducers']
+            whitelist: ['auth']
         }
         , reducers);
 

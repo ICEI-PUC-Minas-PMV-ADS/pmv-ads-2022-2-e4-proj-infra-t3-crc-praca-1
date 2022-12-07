@@ -1,5 +1,9 @@
-import { React, useEffect } from 'react';
+import { React, useState } from 'react';
 import { Container } from '../../styles/GlobalStyles';
+import { toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import * as actions from '../../store/modules/Auth/actions';
+import { get } from 'lodash';
 // esse toast e a messagem se caso acontecer o o componente for chamado o app renderiza essa 
 // essa msg no componente principal
 //foi recebido com styled components a tag mais a sua formatacao
@@ -8,38 +12,60 @@ import { Container } from '../../styles/GlobalStyles';
 // importando um axios para fazer a requisicao atoda vez que o componente for montado
 // importando o useDispatch que vai servir para dar nome quando eu disparar uma acao 
 // vai ter um escutador do redux para capturar ela e fazer algo 
-import { useDispatch } from 'react-redux';
+import { Form, Title } from './styled';
 
 // importando a funcao do exemples/actions.js 
 // que retonar um objeto que tem o type  a qual a funcao dispatch
 // vai usar
-export default function Login() {
-    // Montado (ative essas funcoes)
-    // utilizando a messagem do toastify
-    // utilizando o useEffect para quando o componente ser montado
-    // chamado ne na verdade
 
-    // toda vez que o componente for chamado ou render
-    // irar requisitar criar essa funcao e fazer requisicoes na api
+export default function Login(props) {
+    // o disparador de acoes esta aqui para o redux escutar e o saga fazer a requisicao
 
-    // function getData() {
-    //     Axios.get('/users/').then(
-    //         response => { console.log(response); }
-    //     );
-    // }
-    // getData();
-    // disparador de acoes para o provider do redux ver
+    const dispatch = useDispatch();
+    // se exister esse objeto vai nele se nao usa "/" pagar pegar qual a rota anterior a qual ele estava
+    const prevPath = get(props, 'location.state.prevPath', '/');
 
+    const [name, setName] = useState('');
+    const [senha, setSenha] = useState('');
+    function handleSubmit(evento) {
+        evento.preventDefault();
+        let formErrors = false;
 
-    // acoes que descrevem  oq ele tem que fazer o reducer esta escutando oq chegar 
-    // quando um botao for clicado ou algo do genero
-    // essa clicaBotao e a funcao que reutiliza toda vez que chamar essa funcao pra 
-    // nao ter que mudar em todos arquivos que elas sao chamadas para ficar reutilizavel
-    // primeiro ele faz o request 
+        if (name.length <= 0) {
+            formErrors = true;
+            toast.error("E-mail inexistente e/ou invalido!");
+        }
+        if (senha.length < 6 || senha.length >= 50) {
+            formErrors = true;
+            toast.error("Formato de senha invalida.");
+        }
+        if (formErrors) return;
+
+        // buscar e salvar nos estados e validar.
+        // salvar no login e no token 
+        dispatch(actions.loginRequest({ name, senha, prevPath }));
+
+        // agora to pegando os states das variaveis que foram colocadas 
+    }
+    // quando e o form receber o submit do evento ele vai fazer essa funcao aqui
+
     return (
         <Container>
             {/* // posso passar parametros que sao checados no componente */}
-            <h1>Login</h1>
+            <Title>Login</Title>
+            <Form onSubmit={handleSubmit}>
+                <label htmlFor='name'>
+                    Nome de usuario :
+                    <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                </label>
+                <label htmlFor='senha'>
+                    Senha :
+                    <input type="password" value={senha} onChange={e => setSenha(e.target.value)} />
+                </label>
+                <button type="submit">Entrar</button>
+
+            </Form>
+
 
         </Container>
 

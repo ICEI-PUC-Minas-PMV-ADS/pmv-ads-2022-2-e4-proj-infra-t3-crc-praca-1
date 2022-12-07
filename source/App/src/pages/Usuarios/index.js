@@ -4,18 +4,24 @@ import { UsersContainer, ProfilePicture } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 import { get } from 'lodash';
 import { FaUserCircle, FaEdit, FaWindowClose } from 'react-icons/fa';
-import Axios, { user, token } from '../../services/Axios';
-
+import Axios from '../../services/Axios';
+import { useSelector } from "react-redux";
 export default function Usuarios() {
+
     //  ele retornar o valor que voce esta setando e a funcao que voce esta setado;
     const [users, setUsers] = useState([]);
+    const token = useSelector(state => state.auth.token);
+    Axios.defaults.headers.Authorization = "Bearer " + token;
 
     useEffect(() => {
 
         async function getData() {
-            const alunosResponse = await Axios.get("/users");
+
+            const alunosResponse = await Axios.get("/users/");
             setUsers(alunosResponse.data);
         };
+
+
 
         getData();
     }, []);

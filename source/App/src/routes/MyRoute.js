@@ -1,6 +1,8 @@
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
+// pegar a variavel do redux
+import { useSelector } from "react-redux";
 // vamos receber as props sendo que ele aceita de tudo no parametros
 //posso passar na props do componente <Myroute Component = {</app>}  />
 // Essa variavel vai dizer se a rota e fechada ou nao isClosed
@@ -8,14 +10,14 @@ import PropTypes from "prop-types";
 export default function MyRoute({ children, isClosed }) {
     // O state do redux e acessivel em toda aplicacao entao vamos buscar ela 
     const location = useLocation();
-    const isLoggedIn = false;
+    const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
     // essa rota e fechada ? true e loggedIn nao e igual a true
     // 
     if (isClosed && !isLoggedIn) {
         // redireciona
         return (
             <Navigate
-                to={`/`}
+                to={`/login`}
                 replace
                 state={{ location }}
             />);
