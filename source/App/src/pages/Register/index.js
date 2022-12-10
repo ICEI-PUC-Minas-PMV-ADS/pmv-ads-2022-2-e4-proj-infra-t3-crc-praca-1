@@ -23,13 +23,12 @@ import { get } from 'lodash';
 // que retonar um objeto que tem o type  a qual a funcao dispatch
 // vai usar
 export default function Register() {
-    const id = useSelector(state => state.auth.user.id);
-    const token = useSelector(state => state.auth.token);
     const nomeStored = useSelector(state => state.auth.user.name);
     const emailStored = useSelector(state => state.auth.user.email);
     const cpfStored = useSelector(state => state.auth.user.cpf);
     const departmentStored = useSelector(state => state.auth.user.department);
 
+    const [id, setId] = useState(useSelector(state => state.auth.user.id));
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -80,7 +79,6 @@ export default function Register() {
 
         if (formErrors) return;
         dispatch(actions.registerRequest({
-            token,
             id,
             name,
             cpf,
@@ -94,7 +92,7 @@ export default function Register() {
 
     return (
         <Container>
-            <Title>{id ? 'Editar Conta ' : 'Crie sua Conta!'}</Title>
+            <Title>{'Conta'}</Title>
             <Form onSubmit={handleSubmit}>
                 <label htmlFor="name">
                     Nome:
@@ -119,7 +117,7 @@ export default function Register() {
                 <label htmlFor="foto">
                     Perfil:
                     {/* mudando o parametro toda vez que se mudar o valor do input */}
-                    <input type="file" value={foto} name="foto" onChange={e => setFoto(e.target.value)} />
+                    <input type="text" value={foto} name="foto" onChange={e => setFoto(e.target.value)} />
                 </label>
                 <p>Departamento:</p>
                 <DivRadio htmlFor="departamento">
@@ -130,7 +128,10 @@ export default function Register() {
                     Informatica:
                     <input type="radio" name="departament" onChange={e => setDepartment(2)} />
                 </DivRadio>
-                <button type="submit">{id ? 'Editar ' : 'Criar'}</button>
+                <DivRadio htmlFor="departamento">
+                    <button type="submit" onClick={e => setId(undefined)} >{'Criar'}</button>
+                    <button type="submit">{'Editar '}</button>
+                </DivRadio>
             </Form>
             {/* posso passar parametros que sao checados no componente */}
         </Container>

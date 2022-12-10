@@ -3,28 +3,51 @@ import { Link } from 'react-router-dom';
 import { UsersContainer, ProfilePicture } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 import { get } from 'lodash';
-import { FaUserCircle, FaEdit, FaWindowClose } from 'react-icons/fa';
+import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation, FaExclamationCircle } from 'react-icons/fa';
 import Axios from '../../services/Axios';
 import { useSelector } from "react-redux";
+import { toast } from 'react-toastify';
 export default function Usuarios() {
 
     //  ele retornar o valor que voce esta setando e a funcao que voce esta setado;
     const [users, setUsers] = useState([]);
-    const token = useSelector(state => state.auth.token);
-    Axios.defaults.headers.Authorization = "Bearer " + token;
 
     useEffect(() => {
 
         async function getData() {
-
             const alunosResponse = await Axios.get("/users/");
             setUsers(alunosResponse.data);
         };
-
-
-
         getData();
     }, []);
+
+    const handleDeleteAsk = (e) => {
+        e.preventDefault();
+        const botaoExcluir = e.currentTarget;
+        const confirmaExclamacao = e.currentTarget.nextSibling;
+        botaoExcluir.remove();
+        confirmaExclamacao.setAttribute('display', 'block');
+        console.log(confirmaExclamacao);
+    };
+
+
+    const handleDelete = async (e, userID, index) => {
+        e.preventDefault();
+        try {
+            console.log(userID);
+            // eliminando o pai do elemento.
+            await Axios.delete('/users/' + userID);
+            e.target.parentElement.remove();
+            const usersAtualizados = [...users];
+            usersAtualizados.splice(index, 1);
+            setUsers(usersAtualizados);
+            toast.success("Usuario excluido com sucesso.");
+
+        } catch (error) {
+            toast.success("Tente novamente mais tarde.");
+        }
+
+    };
 
     // so vai executar uma vez e nao todas as vezes que um estado atualizar
     // em vez do this.setState();
@@ -40,7 +63,7 @@ export default function Usuarios() {
                 {/* irei retonar um componente direto  */}
                 {/* onde toda div que passou pelo passar por sua foreach do map precisa possuir uma key unica */}
 
-                {users.map(user => (
+                {users.map((user, index) => (
                     <div key={user.id}>
                         <ProfilePicture>
                             {
@@ -57,8 +80,9 @@ export default function Usuarios() {
                         {/* no foreach ou map */}
                         {/* para quando ele clicar ele poder utilizar */}
                         <span>
-                            <Link to={`/users/${user.id}/edit`}><FaEdit size={16} /></Link>
-                            <Link to={`/users/${user.id}/delete`}> <FaWindowClose size={16} color="red" /></Link>
+                            <Link to={`/usuario/${user.id}/edit`}><FaEdit size={16} /></Link>
+                            <Link to={`/usuario/${user.id}/delete`} onClick={e => handleDeleteAsk(e)} > <FaWindowClose size={16} color="red" /></Link>
+                            <FaExclamationCircle size={16} onClick={e => handleDelete(e, user.id, index)} color="red" display={'none'} cursor={'pointer'} />
                         </span>
                         {/* caso queira adcionar fotos */}
                         {/* condicional para se nao tiver foto usar o icone */}

@@ -49,6 +49,27 @@ export default function (state = initialState, action) {
                 return newState;
             }
 
+        case types.REGISTER_FAILURE:
+            {
+                const newState = { ...initialState };
+                // lembrando todo app fica esperando essas actions tanto ele como o saga tambem
+                // se der erro vai retornar logo de uma vez a questao do tudo false 
+                return newState;
+            }
+
+
+        case types.REGISTER_SUCCESS:
+            {
+                const newState = { ...initialState };
+                newState.user.name = action.payload.name;
+                newState.user.cpf = action.payload.cpf;
+                newState.user.email = action.payload.email;
+                // lembrando todo app fica esperando essas actions tanto ele como o saga tambem
+                // se der erro vai retornar logo de uma vez a questao do tudo false 
+                return newState;
+            }
+
+
         case types.LOGIN_FAILURE:
             {
                 const newState = { ...initialState };

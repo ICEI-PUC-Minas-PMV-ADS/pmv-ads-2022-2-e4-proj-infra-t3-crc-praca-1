@@ -7,7 +7,8 @@ import axios from 'axios';
 import history from '../../../services/history';
 import { useSelector } from 'react-redux';
 
-import { get, identity } from 'lodash';
+import { get } from 'lodash';
+import { Navigate } from 'react-router-dom';
 // la no login a gente disparou a request 
 // takeLatest pega so o ultimo clique 
 // all permite colocar varias acoes
@@ -69,7 +70,26 @@ function* registerRequest({ payload }) {
     // Axios.defaults.headers.Authorization = "Bearer " + token;
     // console.log(token);
     try {
+
         if (id) {
+            yield call(Axios.put, '/users/', {
+                id,
+                name,
+                cpf,
+                email,
+                senha,
+                foto,
+                "department": {
+                    "id": department
+                }
+            });
+            //yield put(actions.registerSuccess({ name, cpf, email, foto }));
+            toast.success("Conta alterada com sucesso!");
+            toast.error("Realize o login novamente, para continuar utilizando o sistema.");
+            Navigate('/login');
+        }
+        // cadastrar
+        if (!id) {
             yield call(Axios.post, '/users/', {
                 name,
                 cpf,
@@ -85,27 +105,9 @@ function* registerRequest({ payload }) {
             });
             yield put(actions.registerSuccess({ name, cpf, email, foto }));
             toast.success("Conta Criada com sucesso!");
+            toast.error("Realize o login novamente, para continuar utilizando o sistema.");
+            Navigate('/login');
         }
-
-        if (!id) {
-            yield call(Axios.put, '/users/', {
-                id,
-                name,
-                cpf,
-                email,
-                senha,
-                foto,
-                "department": {
-                    "id": department
-                },
-                "group": {
-                    "id": 2
-                }
-            });
-            yield put(actions.registerSuccess({ name, cpf, email, foto }));
-            toast.success("Conta alterada com sucesso!");
-        }
-
 
     } catch (error) {
         const status = get(error, 'response.status');
