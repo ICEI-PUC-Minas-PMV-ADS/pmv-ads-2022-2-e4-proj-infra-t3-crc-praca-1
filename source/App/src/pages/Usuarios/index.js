@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { UsersContainer, ProfilePicture } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 import { get } from 'lodash';
-import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation, FaExclamationCircle } from 'react-icons/fa';
+import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation, FaExclamationCircle, FaFileExcel, FaBomb, FaAnchor, FaAngular, FaSave, FaCalendar } from 'react-icons/fa';
 import Axios from '../../services/Axios';
 import { useSelector } from "react-redux";
 import { toast } from 'react-toastify';
@@ -62,9 +62,17 @@ export default function Usuarios() {
             <UsersContainer>
                 {/* irei retonar um componente direto  */}
                 {/* onde toda div que passou pelo passar por sua foreach do map precisa possuir uma key unica */}
+                <tr>
+                    <th>Perfil</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Departamento</th>
+                    <th>Editar | Excluir</th>
+                    <th>Planilhas | Tarefas</th>
+                </tr>
 
                 {users.map((user, index) => (
-                    <div key={user.id}>
+                    <tr key={user.id}>
                         <ProfilePicture>
                             {
                                 get(user, 'foto', false) ?
@@ -73,17 +81,21 @@ export default function Usuarios() {
                                     (<FaUserCircle size={36} />)
                             }
                         </ProfilePicture>
-                        <span>{user.name}</span>
-                        <span>{user.email}</span>
-                        <span>{user.department.name}</span>
+                        <td>{user.name}</td>
+                        <td>{user.email}</td>
+                        <td>{user.department.name}</td>
                         {/* para editr o aluno vou jogar para a rota concatenada com o id do aluno buscado */}
                         {/* no foreach ou map */}
                         {/* para quando ele clicar ele poder utilizar */}
-                        <span>
+                        <td>
                             <Link to={`/usuario/${user.id}/edit`}><FaEdit size={16} /></Link>
                             <Link to={`/usuario/${user.id}/delete`} onClick={e => handleDeleteAsk(e)} > <FaWindowClose size={16} color="red" /></Link>
                             <FaExclamationCircle size={16} onClick={e => handleDelete(e, user.id, index)} color="red" display={'none'} cursor={'pointer'} />
-                        </span>
+                        </td>
+                        <td>
+                            <Link to={`/planilhas/${user.id}/`}><FaFileExcel size={16} color="#3E78EC" /></Link>
+                            <Link to={`/tarefas/${user.id}/`}  > <FaCalendar size={16} color="#2D9257" /></Link>
+                        </td>
                         {/* caso queira adcionar fotos */}
                         {/* condicional para se nao tiver foto usar o icone */}
                         {/* se nao retonar vai retornar uma string vazia */}
@@ -96,7 +108,7 @@ export default function Usuarios() {
 
                         */}
                         {/* <img src={ user.porfilePic.url } alt = "" */}
-                    </div>
+                    </tr>
                 ))}
             </UsersContainer>
         </Container >

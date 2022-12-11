@@ -9,6 +9,7 @@ import Usuario from '../pages/Usuario';
 import Usuarios from '../pages/Usuarios';
 import Page404 from '../pages/page404';
 import MyRoute from './MyRoute';
+import Tarefas from '../pages/Tarefas';
 
 //criando o componente de rotas 
 // vamos usar o myRoute que e na verdade um componente que 
@@ -59,6 +60,13 @@ export default function Rotas() {
                 element={
                     <MyRoute isClosed={true}>
                         <Planilhas />
+                    </MyRoute>
+                }
+            />
+            <Route exact path="/Tarefas/:id"
+                element={
+                    <MyRoute isClosed={true}>
+                        <Tarefas />
                     </MyRoute>
                 }
             />

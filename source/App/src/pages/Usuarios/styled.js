@@ -3,19 +3,23 @@ import styled from 'styled-components';
 export const UsersContainer = styled.div`
     /* distancia do aluno container para o container  */
     margin-top:36px;
-    div {
+    div,tr {
         display:flex;
         justify-content:space-between;
         align-items:center;
         gap:10px;
         padding-top:20px;
     }
-    span{
+    td{
         display:flex;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items:center;
         gap:10px;
-        padding-top:20px;
+        padding-top:10px;
+    }
+    th{
+       font-weight:300;
+        text-align:justify-all;
     }
     /* div que for seguida de uma div  */
     div + div {

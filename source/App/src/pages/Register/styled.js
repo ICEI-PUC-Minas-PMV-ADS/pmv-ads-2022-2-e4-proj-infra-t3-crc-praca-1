@@ -27,10 +27,20 @@ export const Form = styled.form`
         width:242px;
     }
 
+    input[type*='file']{
+        font-size:10px;
+        width:242px;
+    }
     input[type*='radio']{
         height:40px;
         width:20px;
         font-size:18px;
+    }
+    span{
+        font-size: 15px;
+        color:#CC0000;
+        font-weight: 200;
+        padding:0 0 8px 0;
     }
 `;
 
